@@ -9,12 +9,12 @@ public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String table;
+    private String title;
     private String description;
     private int priority;
 
-    public Note(String table, String description, int priority) {
-        this.table = table;
+    public Note(String title, String description, int priority) {
+        this.title = title;
         this.description = description;
         this.priority = priority;
     }
@@ -27,8 +27,8 @@ public class Note {
         return id;
     }
 
-    public String getTable() {
-        return table;
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {
